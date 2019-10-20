@@ -13,7 +13,7 @@ import requests
 
 log = logging.getLogger(__name__)
 
-destinations = [("grc.com", 443)]
+destinations = [("yahoo.com", 80)]
 TEST_URL = "http://login.yahoo.com"
 
 

@@ -12,8 +12,7 @@ import logging
 
 log = logging.getLogger(__name__)
 
-destinations = [("grc.com", 443)]
-
+destinations = [("davo-discovery.australiaeast.cloudapp.azure.com", 22)]
 
 
 def fetch_ssh_fingerprint(exit_desc):
