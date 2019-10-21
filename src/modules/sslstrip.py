@@ -13,8 +13,8 @@ import requests
 
 log = logging.getLogger(__name__)
 
-destinations = [("yahoo.com", 80)]
-TEST_URL = "http://login.yahoo.com"
+destinations = [("nytimes.com", 80)]
+TEST_URL = "http://nytimes.com"
 
 
 def check_sslstrip(exit_desc):

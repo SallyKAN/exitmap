@@ -22,7 +22,6 @@ def fetch_cert(exit_desc):
     expected = "159A76C5AEF4901579E6A49996C1D6A1D93B0743"
     exit_url = exiturl(exit_desc.fingerprint)
     log.debug("Probing exit relay %s." % exit_url)
-
     data = None
     try:
         hostname = "grc.com"
