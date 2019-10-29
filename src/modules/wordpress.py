@@ -49,7 +49,10 @@ def fetch_page(exit_fpr):
 
     exit_url = exiturl(exit_fpr)
 
-    with webdriver.Firefox() as driver:
+    options = webdriver.FirefoxOptions()
+    options.headless = True
+
+    with webdriver.Firefox(firefox_options=options) as driver:
         driver.get("http://{}/wp-login.php".format(HOST))
 
         if "WordPress" not in driver.title:
