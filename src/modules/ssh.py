@@ -16,8 +16,8 @@ destinations = [("davo-discovery.australiaeast.cloudapp.azure.com", 22)]
 
 
 def fetch_ssh_fingerprint(exit_desc):
-    ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGf8f/Q51D5WWAsxk26Cegv9DGn/jl4K6If0UnP7z5i9"
-    ssh_ip = "52.237.232.233"
+    ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH9HYNr52qSsFOEDulviCvt9JB7rK5HdGQYle6Av3tVM"
+    ssh_ip = "206.189.127.119"
     exit_url = exiturl(exit_desc.fingerprint)
     log.debug("Probing exit relay %s." % exit_url)
 

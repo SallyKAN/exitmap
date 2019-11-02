@@ -40,6 +40,8 @@ domains = {
     "www.i2p2.de": [],
     "torrentfreak.com": [],
     "blockchain.info": [],
+    "pornhub.com":[],
+    "4chan.org":[]
 }
 
 

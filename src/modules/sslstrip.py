@@ -1,4 +1,3 @@
-import subprocess
 try:
     import urllib2
 except ImportError:
@@ -24,6 +23,7 @@ def check_sslstrip(exit_desc):
     try:
         output = requests.get(TEST_URL)
         url = output.url
+        log.info("Returned url %s" % (url))
     except Exception as err:
         log.warning("urllib2.urlopen for %s says: %s." %
                     (exit_desc.fingerprint, err))
@@ -32,7 +32,7 @@ def check_sslstrip(exit_desc):
         log.warning("Exit relay %s did not return data." % exit_url)
         return
     if "https" not in url:
-        log.warning("Possible SSL Strip attacks by %s: %s." % (exit_url, output))
+        log.critical("Possible SSL Strip attacks by %s: %s." % (exit_url, output))
     else:
         log.debug("Exit relay %s worked fine." % exit_url)
 
