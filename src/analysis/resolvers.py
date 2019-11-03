@@ -9,7 +9,7 @@ import logging as log
 
 
 def exit_resolvers(csv_file):
-    with open(csv_file, 'r') as records, open('exit_resolvers.csv', 'w') as output:
+    with open(csv_file, 'r') as records, open('./resolvers/exit_resolvers.csv', 'w') as output:
         reader = csv.reader(records, delimiter=',')
         writer = csv.writer(output, delimiter=',')
         # header = ['fingerprint', 'exit_relay', 'resolver_ip', 'company', 'location']
