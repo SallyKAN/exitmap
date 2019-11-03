@@ -32,7 +32,7 @@ def read_log(log_file, name):
                 time = time_diff(start, values[0])
                 diffs.append(time)
                 print(fraction + "," + str(time))
-    with open(name + ".csv", 'w') as file:
+    with open("./performance/" + name + ".csv", 'w') as file:
         header = ['time', 'fraction']
         writer = csv.writer(file)
         writer.writerow(header)
