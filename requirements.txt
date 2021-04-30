@@ -5,5 +5,5 @@ idna==2.8
 M2Crypto==0.35.2
 requests==2.22.0
 stem==1.7.1
-urllib3==1.25.6
+urllib3==1.25.8
 selenium==3.141.0
